@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="testng(failed)">
+    <classes>
+      <class name="com.ultimatix.functionaltests.LaunchMultiBrowser">
+        <methods>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- com.ultimatix.functionaltests.LaunchMultiBrowser -->
+      <class name="com.ultimatix.functionaltests.LoginUx">
+        <methods>
+          <include name="createScreenShotDoc"/>
+          <include name="storeScreenShot"/>
+        </methods>
+      </class> <!-- com.ultimatix.functionaltests.LoginUx -->
+    </classes>
+  </test> <!-- testng(failed) -->
+</suite> <!-- Failed suite [Suite] -->
