@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ultimatix.functionaltests.LoginUx">
+      <class name="com.ultimatix.functionaltests.VisaStatus">
         <methods>
-          <include name="loginUltimatix_TC01"/>
+          <include name="CheckVisaStatus"/>
+          <include name="loginUx"/>
+          <include name="createScreenShotDoc"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- com.ultimatix.functionaltests.LoginUx -->
+      </class> <!-- com.ultimatix.functionaltests.VisaStatus -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,18 +13,24 @@ import com.ultimatix.utils.GenericUtilLib;
 
 
 public class LoginUx extends TestConfiguration{
+	LoginPage lp;
 	
 	@Test(dataProvider="getData_LoginUx")
 	public void loginUltimatix_TC01(String browser, String url,String userName, String pwd)
 	{
 		WebDriver driver= GenericUtilLib.runBrowser( browser, url);
 		GenericUtilLib.captureScreen(driver);
-		LoginPage lp= new LoginPage(driver);
+		lp= new LoginPage(driver);
 		lp.login(userName, pwd);
 		GenericUtilLib.captureScreen(driver);
-		lp.logout();
-		driver.close();
+
 	
 	}
+	public void logOutUltimatix_Tc02()
+	{
+		lp.logout();
+		driver.close();
+	}
+	
 
 }

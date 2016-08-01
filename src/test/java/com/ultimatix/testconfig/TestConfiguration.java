@@ -1,10 +1,9 @@
 package com.ultimatix.testconfig;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 
 import com.ultimatix.utils.GenericUtilLib;
@@ -64,7 +63,7 @@ public class TestConfiguration extends GenericUtilLib{
 
 		return data;
 	}
-	@BeforeMethod
+	@BeforeSuite
 	public void createScreenShotDoc()
 	{
 		
@@ -72,7 +71,7 @@ public class TestConfiguration extends GenericUtilLib{
 		r= doc.createParagraph().createRun();
 		
 	}
-	@AfterMethod
+	@AfterSuite
 	public void storeScreenShot()
 	{
 		try {
