@@ -44,8 +44,8 @@ public class VisaStatus extends TestConfiguration{
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
-		userName="roushan18";
-		pwd="AUg@2016";
+		userName="xyz";
+		pwd="hhhs";
 		lu.loginUltimatix_TC01(browser, url, userName, pwd);		
 		String homeTitle=driver.getTitle();
 		WebDriverWait wait= new WebDriverWait(driver,30);
