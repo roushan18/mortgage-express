@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Suite]">
-  <test name="testng(failed)">
+  <test name="Test(failed)">
     <classes>
-      <class name="com.ultimatix.functionaltests.LaunchMultiBrowser">
+      <class name="com.ultimatix.functionaltests.VisaStatus">
         <methods>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- com.ultimatix.functionaltests.LaunchMultiBrowser -->
-      <class name="com.ultimatix.functionaltests.LoginUx">
-        <methods>
+          <include name="CheckVisaStatus"/>
+          <include name="loginUx"/>
           <include name="createScreenShotDoc"/>
-          <include name="storeScreenShot"/>
         </methods>
-      </class> <!-- com.ultimatix.functionaltests.LoginUx -->
+      </class> <!-- com.ultimatix.functionaltests.VisaStatus -->
     </classes>
-  </test> <!-- testng(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
