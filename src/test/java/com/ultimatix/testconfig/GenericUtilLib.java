@@ -1,4 +1,4 @@
-package com.ultimatix.utils;
+package com.ultimatix.testconfig;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,6 +24,7 @@ public class GenericUtilLib
 	{
 		int rowcount=1;
 		int cellcount=0;
+		String s="abc";
 		List<String> cellValue;
 		Map<String,List<String>> map;
 		File f= new File("./Data/Test-Data.xlsx");
